@@ -20,8 +20,9 @@ if (commands == 'concert-this') {
         jp = JSON.parse(data);
         console.log('Venue: ' + jp[0].venue.name)
         console.log('Location: ' + jp[0].venue.country)
-        console.log('Date of the event: ' + jp[0].datetime)
-        jp[0].datetime = moment().format('MMMM Do YYYY')
+        i = moment(jp[0].datetime).format('MM/DD/YYYY')
+        console.log('Date of the event: ' + i)
+
     })
 } else if (commands == 'spotify-this-song') {
 
