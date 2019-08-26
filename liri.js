@@ -29,7 +29,8 @@ if (commands == 'concert-this') {
             return console.log('Error occurred: ' + err);
         }
 
-        console.log(data.tracks.items[0]);
+        console.log(data.tracks.items[1]);
+
     });
     // apiCall = "https://api.spotify.com/v1/search?query=" + queryAll + "&type=track&offset=20&limit=20";
     // allIn(apiCall, function(error, response, data) {
